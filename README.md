@@ -28,13 +28,13 @@ Run the following steps to get th application running:
   
   1. Given a company, the API needs to return all their employees. Provide the appropriate solution if the company does not have any
      employees.
-     curl -X GET http://127.0.0.1:5000/citizen/getEmployees/company=CORMORAN
+     curl -X GET "http://127.0.0.1:5000/citizen/getEmployees/company=CORMORAN"
      
   2. Given 2 people, provide their information (Name, Age, Address, phone) and the list of their friends in common which have brown eyes      and are still alive
-     curl -X GET http://127.0.0.1:5000/citizen/findFriends/name=Eugenia Thornton,Carmella Lambert
+     curl -X GET "http://127.0.0.1:5000/citizen/findFriends/name=Eugenia Thornton,Carmella Lambert"
      
   3. Given 1 people, provide a list of fruits and vegetables they like
-     curl -X GET http://127.0.0.1:5000/citizen/getFood/name=Eugenia Thornton
+     curl -X GET "http://127.0.0.1:5000/citizen/getFood/name=Eugenia Thornton"
      
  # Test Usage.
     Once inside container run python manage.py test.
