@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  backendapi:
+    build: .
+    command: bash -c "python manage.py import_data && python manage.py runserver 0.0.0.0:5000"
+    container_name: paranuara
+    ports:
+     - "5000:5000"
